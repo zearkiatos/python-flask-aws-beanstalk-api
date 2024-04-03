@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "08ce85bf-f8cf-4ca4-8679-e55368f915e9",
+		"name": "Python-flask-aws-beanstalk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1347256"
+	},
+	"item": [
+		{
+			"name": "heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BEANSTALK_LOCAL_BASE_URL}}/",
+					"host": [
+						"{{BEANSTALK_LOCAL_BASE_URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "heroe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BEANSTALK_LOCAL_BASE_URL}}/0",
+					"host": [
+						"{{BEANSTALK_LOCAL_BASE_URL}}"
+					],
+					"path": [
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BEANSTALK_LOCAL_BASE_URL",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}
